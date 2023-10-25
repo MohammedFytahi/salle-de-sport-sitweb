@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galerrie.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <li class="nav-item">FITZON</li>
+        </div>
+        <ul class="navbar_links">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="progrm.html">Program</a></li>
+            <li class="nav-item"><a href="galerrie.html">Gallerie</a></li>
+            <li class="nav-item">
+                <form action="sign.html">
+                    <button class="signin-buton">Sign in</button>
+                </form>
+
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div class="home-text">
+
+            <h1 id="TITRE">WORK HARD OR GO HOME</h1>
+            <p>Discover the key to achieving your fitness goals <br>on our homepage, where we provide expert guidance
+                and brpersonalized workout plans.</p>
+
+
+
+        </div>
+        <div class="button-container">
+            <a href="#" class="home-btn">Sign up</a>
+        </div>
+
+    </section>
+
+        <div class="titre2">What you get here</div>
+     
+</head>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade" style="text-align: center;">
+  <div class="numbertext">1 / 10</div>
+  <img src="https://img.freepik.com/photos-gratuite/gymnase-equipement-cyclisme-salle_23-2149270210.jpg?size=626&ext=jpg"style="width:50% ; ">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade"style="text-align: center;">
+  <div class="numbertext">2 / 10</div>
+  <img src="https://img.freepik.com/photos-gratuite/equipements-dans-salle-gym_93675-129477.jpg?size=626&ext=jpg" style="width:50%">
+  
+</div>
+
+<div class="mySlides fade"style="text-align: center;">
+  <div class="numbertext">3 / 10</div>
+  <img src="img/Group 8.svg" style="width:50%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/Group 9.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/Group 10.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/Group 11.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/Group 12.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/Group 13.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/Group 14.svg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade"style="text-align: center;">
+    <div class="numbertext">10 / 10</div>
+    <img src="img/Group 16.svg " style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        <div class="footer">
+            <div>
+                <h2>NEED MORE INFORMATIONS</h2>
+            </div>
+            <div class="button-container">
+                <a href="#" class="home-btn">Contact us</a>
+            </div>
+        </div>
+        <div class="fit">
+            <div class="logo">FITZON</div>
+            <div>
+                <a href="#"><p>home</p></a>
+                <a href=""><p>about</p></a>
+                <a href=""><p>program</p></a>
+                <a href="#"><p>gallerie</p></a>
+                <a href="#"><p>sign up</p></a>
+            </div>
+            <div>
+                <a href="#"><p>sevice1</p></a>
+                <a href="#"><p>sevice1</p></a>
+                <a href="#"><p>sevice1</p></a>
+                <a href="#"><p>sevice1</p></a>
+                <a href="#"><p>sevice1</p></a>
+            </div>
+            <div>
+                <a href="#"><p>terms & policy</p></a>
+                <a href="#"><p>privacy policy</p></a>
+                <a href="#"><p>support</p></a>
+                <a href="#"><p>blog</p></a>
+                <a href="#"><p>courses</p></a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+    
+    </html>

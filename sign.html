@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <li class="nav-item">FITZON</li>
+        </div>
+        <ul class="navbar_links">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="progrm.html">Program</a></li>
+            <li class="nav-item"><a href="galerrie.html">Gallerie</a></li>
+            <li class="nav-item">
+                <form action="sign.html">
+                    <button class="signin-buton">Sign in</button>
+                </form>
+
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div class="home-text">
+
+            <h1 id="TITRE">WORK HARD OR GO HOME</h1>
+            <p>Discover the key to achieving your fitness goals <br>on our homepage, where we provide expert guidance
+                and brpersonalized workout plans.</p>
+
+
+
+        </div>
+        <div class="button-container">
+            <a href="#" class="home-btn">Sign up</a>
+        </div>
+
+    </section>
+    <div class="titre2">Sign up</div>
+    <div id="success-message" style="display: none; color:green;text-align: center;">Données enregistrées avec succès!
+    </div>
+    <div class="container">
+        <form class="contact-form" action="" method="post" onsubmit="return saveData(event)">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Nom et Prénom" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="cin" name="cin" placeholder="CIN" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
+            </div>
+            <select name="choice" id="choice" required>
+                <option value="BASIC PLAN">BASIC PLAN</option>
+                <option value="Premium PLAN">Premium plan</option>
+
+            </select>
+            <div class="env"><button type="submit">Envoyer</button></div>
+        </form>
+
+    </div>
+    <div class="footer">
+        <div>
+            <h2>NEED MORE INFORMATIONS</h2>
+        </div>
+        <div class="button-container">
+            <a href="#" class="home-btn">Contact us</a>
+        </div>
+    </div>
+    <div class="fit">
+        <div class="logo">FITZON</div>
+        <div>
+            <a href="#">
+                <p>home</p>
+            </a>
+            <a href="">
+                <p>about</p>
+            </a>
+            <a href="">
+                <p>program</p>
+            </a>
+            <a href="#">
+                <p>gallerie</p>
+            </a>
+            <a href="#">
+                <p>sign up</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <p>sevice1</p>
+            </a>
+            <a href="#">
+                <p>sevice1</p>
+            </a>
+            <a href="#">
+                <p>sevice1</p>
+            </a>
+            <a href="#">
+                <p>sevice1</p>
+            </a>
+            <a href="#">
+                <p>sevice1</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <p>terms & policy</p>
+            </a>
+            <a href="#">
+                <p>privacy policy</p>
+            </a>
+            <a href="#">
+                <p>support</p>
+            </a>
+            <a href="#">
+                <p>blog</p>
+            </a>
+            <a href="#">
+                <p>courses</p>
+            </a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="SIGN.js"></script>
+</body>
+
+</html>
